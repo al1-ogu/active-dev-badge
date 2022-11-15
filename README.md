@@ -1,0 +1,11 @@
+
+# Get the Discord Active Developer Badge
+
+Code to get the active developer badge on discord.
+I have tried to idiot proof this as much as possible, please let me know of any mistakes/things I should add.
+Feel free to PM me at https://ogu.gg/al1 if you need any help.
+
+
+## Directions
+
+Download the source code by clicking the green code button, then download zip. After you've downloaded it, extract the files. Open the folder, and click the bar which says the location of the folder on your computer. Type "cmd" in this bar and press enter. Now, run "python install pip" if you don't already have pip installed, and then "pip install requirements.txt" to install the required modules. Open the Python file and go to https://discord.com/developers/applications and sign in. Click the blue "New Application" button in the top right. Enter any name and agree to their TOS. Click on the "Bot" tab in the column on the left titled "Settings" and then click "Add Bot" on the right. Now a pop up will open, click on "Yes, do it" to create a Discord Bot on your application. Finally, click on "Reset Token" and then "Yes, do it" when the pop up opens. Now you can copy this token. Place this token where it says "PUT_TOKEN_HERE" on line <>. Make sure to leave the quotes. Now, go create a Discord server and enable community. This can be found in "Server Settings" and then the "Enable Community" tab. Next, you'll need to enbable the intents for your Discord Bot. Select the "Bot" tab in the Developer Portal and scroll until you see "Privileged Gateway Intents", enable the 3 options below it. Now, replace "YOUR_ID" with the Application ID from your bot (this can be found under the "General Information" section) in this link https://discord.com/api/oauth2/authorize?client_id=YOUR_ID&permissions=8&scope=bot%20applications.commands and open it. Add the bot to the server you just created. Finally, you can run the Python file that you replaced your token in. Go to the server you created, the bot should be online now, run the command "/badge" and the bot will reply to you to let you know if the command was successful. That's it, check https://discord.com/developers/active-developer in 24 hours and you'll have access to the badge.
